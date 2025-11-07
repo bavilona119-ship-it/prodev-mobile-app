@@ -16,6 +16,7 @@ const HomeRootLayout = () => {
           tabBarIcon: ({ color }) => <AntDesign name="home" size={24} color={color} />,
         }}
       />
+
       <Tabs.Screen
         name="search"
         options={{
@@ -24,6 +25,7 @@ const HomeRootLayout = () => {
           tabBarIcon: ({ color }) => <Feather name="search" size={24} color={color} />,
         }}
       />
+
       <Tabs.Screen
         name="saved"
         options={{
@@ -32,20 +34,26 @@ const HomeRootLayout = () => {
           tabBarIcon: ({ color }) => <EvilIcons name="heart" size={27} color={color} />,
         }}
       />
+
       <Tabs.Screen
         name="inbox"
         options={{
           title: "Inbox",
           headerShown: true,
-          tabBarIcon: ({ color }) => <Ionicons name="chatbubbles-outline" size={24} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="chatbubbles-outline" size={24} color={color} />
+          ),
         }}
       />
+
       <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
           headerShown: true,
-          tabBarIcon: ({ color }) => <FontAwesome name="user-o" size={24} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="user-o" size={24} color={color} />
+          ),
         }}
       />
     </Tabs>
